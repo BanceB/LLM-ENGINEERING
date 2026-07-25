@@ -128,7 +128,7 @@ En revanche, son effet sur la **volatilité** est massif et sans ambiguïté :
 | Préfixe stable, contrôle total du prompt | Automatique | 74,4 % |
 | Contenu variable en fin de prompt (horodatage, contexte par requête) | **Breakpoint explicite** | ~72 %, insensible |
 | Silences fréquents > 5 min entre requêtes | Mélange TTL | +4 pts vs cache simple |
-| Instructions modifiées en cours de session | **Éviter le TTL 1 h** | −14,6 pts sinon |
+| Instructions modifiées en cours de session | **Éviter le TTL 1 h** OU  modifier l'instruction à travers le **system User** | −14,6 pts sinon |
 | Latence du 1er appel / facturation à lisser | Pré-chauffage | volatilité ÷25 |
 | Préfixe < 4 096 tokens | **Pas de cache** | aucun effet, échec silencieux |
 
