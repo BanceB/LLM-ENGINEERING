@@ -1,0 +1,4 @@
+strategie,perf_min,perf_max,etendue_pts
+Automatique,-23.89,74.4,98.29
+Breakpoint explicite,71.23,73.55,2.319999999999993
+Mélange TTL,64.06,67.27,3.2099999999999937
