@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Chatbot</h1>
+    <button id="reset" type="button" title="Oublier la conversation">Effacer</button>
+  </header>
+
+  <main id="fil" aria-live="polite">
+    <div class="bulle bot">Bonjour ! Pose-moi une question.</div>
+  </main>
+
+  <form id="form" autocomplete="off">
+    <textarea id="champ" rows="1" maxlength="4000" placeholder="Pose ta question…"
+              aria-label="Ta question"></textarea>
+    <button id="envoyer" type="submit">Envoyer</button>
+  </form>
+
+  <p id="aide">Entrée pour envoyer · Maj + Entrée pour aller à la ligne</p>
+
+  <script src="/static/chat.js"></script>
+</body>
+</html>
